@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f5f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #fff;
+}
+
+.menu-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    color: #e63946;
+}
+
+/* Tajuk */
+.tajuk-utama {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Gambar Produk */
+.produk-gambar-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.gambar-biskut {
+    width: 140px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Nota Panduan */
+.nota-panduan {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nota-panduan h3 {
+    color: #e63946;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Grid Produk */
+.grid-produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.kotak-produk {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.gambar-produk {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.nama-produk {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.pilihan-saiz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.harga-produk {
+    color: #e63946;
+    font-weight: 500;
+}
+
+.input-kuantiti {
+    width: 60px;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Bahagian Bayaran */
+.bahagian-bayaran {
+    background: #fff;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.jumlah-tunjuk {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+#jumlahHarga {
+    color: #2a9d8f;
+    font-size: 22px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.btn-hantar {
+    width: 100%;
+    padding: 15px;
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-hantar:hover {
+    background-color: #c1121f;
+}
+
+/* Resit */
+.kotak-resit {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 750px;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.maklumat-resit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.jadual-resit {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.jadual-resit th,
+.jadual-resit td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.jadual-resit th {
+    background-color: #f9f9f9;
+}
+
+.kanan { text-align: right; }
+.tengah { text-align: center; }
+
+.jumlah-keseluruhan-teks {
+    text-align: right;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.jumlah-keseluruhan-nilai {
+    font-weight: 600;
+    color: #2a9d8f;
+    font-size: 19px;
+    text-align: right;
+}
+
+.nota-resit {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.btn-cetak-group {
+    text-align: center;
+}
+
+.btn-cetak {
+    padding: 12px 30px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Ralat 404 */
+.kotak-ralat {
+    text-align: center;
+    background: #fff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.pautan-ralat {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pautan-ralat a {
+    padding: 10px 20px;
+    background: #e63946;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* Footer */
+.footer-bawah {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Cetak */
+@media print {
+    .header-section, .footer-bawah, .btn-cetak-group, .menu-nav {
+        display: none !important;
+    }
+    body { background: #fff; }
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .header-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .maklumat-resit {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
